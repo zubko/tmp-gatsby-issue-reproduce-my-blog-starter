@@ -62,5 +62,11 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       node,
       value,
     })
+
+    createNodeField({
+      node,
+      name: "path",
+      value: "2019-03-01-hello-world.md",
+    })
   }
 }
